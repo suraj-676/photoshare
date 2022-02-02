@@ -7,13 +7,30 @@
 
     <%= stylesheet_link_tag "application", media: "all" %>
     <%= javascript_include_tag "application" %>
+    <%= cloudinary_js_config %>
   </head>
 
   <body>
+  <div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <%= link_to "Home", root_path %>
+      <%= link_to "News", posts_path %>
+    </div>
+  </div>
+</div>
+
+<img class="photo" src="https://secure.gravatar.com/avatar/bea6ff7f57ab283aa956f1c41292fc49?size=100/100">
+
+<nav>
+      <h1>
+      PhotoShare
+      </h1>
   <div class="log">
        <% if @current_user.present? %>
          <%= @current_user.name %>
         
+
          
          <%= link_to "Logout", login_path, method: "delete" %>
          
@@ -22,15 +39,14 @@
          <%= link_to "Login", login_path %>
          
          <%= link_to "Sign Up", "/does-not-exist-yet" %>
-       <% end %>
+       
         </div>
-  <img src="https://secure.gravatar.com/avatar/bea6ff7f57ab283aa956f1c41292fc49?size=100">
+        
+        <% end %>
+  
 
 
-    <nav>
-      <h1>
-      PhotoShare
-      </h1>
+    
       
       
 
@@ -40,6 +56,7 @@
     </nav>
 
     <%= yield %>
+  
 
     
 

@@ -1,3 +1,8 @@
-<h1>Post#index</h1>
-<%= render "form" %>
-
+<h1>Post</h1>
+<ul>
+  <% @posts.each do |p| %>
+    <ol>
+      <%= link_to cl_image_tag(p.image), post_path(p.id) %>
+    </ol>
+  <% end %>
+</ul>
