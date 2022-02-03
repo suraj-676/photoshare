@@ -12,7 +12,7 @@
 
   <body>
   <div class="bg-img">
-  <div class="container-fluid">
+  <div class="container">
     <div class="topnav">
       <%= link_to "Home", root_path %>
       <%= link_to "Posts", posts_path %>
@@ -28,26 +28,23 @@
 </div>
 <nav>
       
-  <div class="log">
        <% if @current_user.present? %>
        <%= cl_image_tag @current_user.avatar %>
          <%= @current_user.name %>
         </div>
-
+         <p class="share"> Share your memories here</p>
          <div class="login">
          <%= link_to "Create Posts", new_post_path %>
-        
-         
-        
 
-         <%= link_to "Logout", login_path, method: "delete" %>
          
-         
-       <% else %>
+  <div class="log">
+        <%= link_to "Logout", login_path, method: "delete" %>
+         <% else %>
          <%= link_to "Login", login_path %>
          
          <%= link_to "Sign Up", "/does-not-exist-yet" %>
        </div>
+       
         
         
         

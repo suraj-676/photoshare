@@ -4,13 +4,12 @@ class CommentsController < ApplicationController
   end
 
   def show
-    @comment = Comment.find params[: id]
+    @comment = Comment.find params[:id]
   end
 
   def edit
-    @comment = Comment.find params[: id]
+    @comment = Comment.find params[:id]
   end
-
 
   def update
     comment = Comment.find params[:id]
@@ -25,6 +24,6 @@ class CommentsController < ApplicationController
 
   def destroy
     Comment.destroy params[:id]
-    redirect_to comments_path 
+    redirect_to comments_path
   end
 end

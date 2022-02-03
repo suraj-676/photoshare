@@ -11,7 +11,9 @@
 </p>
 
 <% if @post.image.present? %>
-  <%= image_tag @post.image, alt: @post.title, class: "user_image" %>
+  <%= cl_image_tag @post.image, alt: @post.title, class: "user_image" %>
+
+  
 
 <% end %>
 <% @post.comments.each do |c| %>

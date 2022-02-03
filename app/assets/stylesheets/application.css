@@ -1,9 +1,11 @@
 .field_with_errors {
-    border: 2px solid red;
+    border: 2px solid rgb(128, 81, 81);
 }
 
 body {
-    background-color: white;
+    background-color: gray;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 h1 {
@@ -11,17 +13,18 @@ h1 {
     font-family: cursive;
     color: white;
     font-size: 40px;
-    background-image: '';
+    c background-image: '';
 }
 
 .log {
     text-align: left;
+    margin-left: 30px;
 }
 
 img {
     display: inline-flex;
-    height: 200px;
-    margin-top: 20px;
+    height: 100px;
+    margin-top: 10px;
 }
 
 .topnav {
@@ -58,12 +61,28 @@ img {
 }
 
 #foo {
-    height: 50px;
     float: right;
 }
 
 #text {
     float: right;
-    margin-right: 30px;
+    margin-right: 10px;
     font-size: 30px;
+    font-family: 'Quintessential', cursive;
+    ;
+}
+
+.login {
+    font-size: 20px;
+}
+
+.share {
+    margin-left: 37%;
+    font-size: 30px;
+    font-family: 'Quintessential', cursive;
+    outline: blueviolet;
+}
+
+.share:hover {
+    color: rgb(0, 255, 191)
 }
