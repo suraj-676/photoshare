@@ -3,9 +3,14 @@ class CommentsController < ApplicationController
     @comment = Comment.new
   end
 
+  def show
+    @comment = Comment.find params[: id]
+  end
+
   def edit
     @comment = Comment.find params[: id]
   end
+
 
   def update
     comment = Comment.find params[:id]

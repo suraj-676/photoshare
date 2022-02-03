@@ -15,12 +15,13 @@ h1 {
 }
 
 .log {
-    text-align: right;
+    text-align: left;
 }
 
 img {
     display: inline-flex;
     height: 200px;
+    margin-top: 20px;
 }
 
 .topnav {
@@ -56,8 +57,13 @@ img {
     color: white;
 }
 
-.photo {
-    height: 100px;
+#foo {
+    height: 50px;
     float: right;
-    margin-top: 20px;
+}
+
+#text {
+    float: right;
+    margin-right: 30px;
+    font-size: 30px;
 }

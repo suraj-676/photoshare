@@ -2,10 +2,10 @@
 
 print "Creating users..."
 User.destroy_all
-u1 = User.create! email: "Suraj@ga.co", name: "suraj", password: "chicken"
-u2 = User.create! email: "Dan@ga.co", name: "dan", password: "chicken"
-u3 = User.create! email: "Steven@ga.co", name: "steven", password: "chicken"
-u4 = User.create! email: "Franki@ga.co", name: "franki", password: "chicken"
+u1 = User.create! email: "Suraj@ga.co", name: "suraj", password: "chicken", avatar: "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+u2 = User.create! email: "Dan@ga.co", name: "dan", password: "chicken", avatar: "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg"
+u3 = User.create! email: "Steven@ga.co", name: "steven", password: "chicken", avatar: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3JTIwemVhbGFuZCUyMHBlb3BsZXxlbnwwfHwwfHw%3D&w=1000&q=80"
+u4 = User.create! email: "Franki@ga.co", name: "franki", password: "chicken", avatar: "https://ichef.bbci.co.uk/news/490/cpsprodpb/C870/production/_112921315_gettyimages-876284806.jpg"
 
 puts "created #{User.count} users."
 
