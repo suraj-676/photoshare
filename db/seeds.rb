@@ -15,15 +15,15 @@ p1 = Post.create!(
   image: "https://i.ytimg.com/vi/tArC9-RHmU4/maxresdefault.jpg",
   user_id: u1.id,
   title: "cars",
-  description: "Technology is Amazing",
+  description: "There’s nothing like the unconditional love of a pet. They show you affection, give you a sense of purpose, and greet you every day when you come home (well, maybe not if you have a cat). There’s a lot of beautiful sayings and quotes out there about the rare kind of magic pets bring to our lives. Whether you’re about to take the adoption plunge or you just want to wax poetic about puppy love, these quotes will melt your heart in the same way a surprise cuddle from your pet does.",
 
 )
 
 p2 = Post.create!(
   image: "https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80/300/300",
   user_id: u1.id,
-  title: "funny",
-  description: "There’s nothing like the unconditional love of a pet. They show you affection, give you a sense of purpose, and greet you every day when you come home (well, maybe not if you have a cat). There’s a lot of beautiful sayings and quotes out there about the rare kind of magic pets bring to our lives. Whether you’re about to take the adoption plunge or you just want to wax poetic about puppy love, these quotes will melt your heart in the same way a surprise cuddle from your pet does.",
+  title: "Cats",
+  description: "Keep in mind, kittens and senior cats will spend more time sleeping than, say, an adolescent cat. But if you're worried that your cat is sleeping too much—or too little—talk to your vet about what's normal for his breed, age, activity level, and size. ",
 )
 p3 = Post.create!(
   image: "https://assets.unenvironment.org/styles/article_billboard_image/s3/2021-05/alberta-2297204_1920.jpg?h=1483c54f&amp;itok=GdjA9GRu/300/300",
@@ -52,27 +52,27 @@ print "Creating comments..."
 Comment.destroy_all
 c1 = Comment.create!(
   user_id: u1.id,
-  content: "simba is dumbass1",
+  content: "Cats are cutests pet ever",
   post_id: p1.id,
 )
 c2 = Comment.create!(
   user_id: u1.id,
-  content: "simba is dumbass2",
+  content: "Future of spending money",
   post_id: p1.id,
 )
 c3 = Comment.create!(
   user_id: u2.id,
-  content: "simba is dumbass3",
+  content: "Nature",
   post_id: p2.id,
 )
 c4 = Comment.create!(
   user_id: u3.id,
-  content: "simba is dumbass4",
+  content: "White Bengal Tigers",
   post_id: p3.id,
 )
 c5 = Comment.create!(
   user_id: u4.id,
-  content: "simba is dumbass5",
+  content: "Penguins",
   post_id: p4.id,
 )
 puts "created #{Comment.count} comments:"
