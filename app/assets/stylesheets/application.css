@@ -13,7 +13,6 @@ h1 {
     font-family: cursive;
     color: white;
     font-size: 40px;
-    c background-image: '';
 }
 
 .log {
@@ -81,6 +80,8 @@ img {
     font-size: 30px;
     font-family: 'Quintessential', cursive;
     outline: blueviolet;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .share:hover {
