@@ -1,2 +1,16 @@
-<h1>Post#show</h1>
+<h2><%= @user.name %></h2>
+<%= link_to "Delete", post_path(@user), method: "delete" %>
 
+p>
+  <strong>title</strong>:
+  <%= @user.title %>
+</p>
+
+p>
+  <strong>description</strong>:
+  <%= @user.description %>
+</p>
+
+<% if @user.image.present? %>
+  <%= image_tag @user.image, alt: @user.name, class: "user_image" %>
+<% end %>

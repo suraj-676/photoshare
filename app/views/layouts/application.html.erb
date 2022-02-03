@@ -15,12 +15,14 @@
   <div class="container">
     <div class="topnav">
       <%= link_to "Home", root_path %>
-      <%= link_to "News", posts_path %>
+      <%= link_to "Posts", posts_path %>
     </div>
   </div>
 </div>
 
+
 <img class="photo" src="https://secure.gravatar.com/avatar/bea6ff7f57ab283aa956f1c41292fc49?size=100/100">
+<h3>Welcome to PhotoShare please Login or Signup</h3>
 
 <nav>
       <h1>
@@ -31,7 +33,10 @@
          <%= @current_user.name %>
         
 
-         
+         <%= link_to "Posts", posts_path %>
+         |
+        
+
          <%= link_to "Logout", login_path, method: "delete" %>
          
          
@@ -40,19 +45,18 @@
          
          <%= link_to "Sign Up", "/does-not-exist-yet" %>
        
-        </div>
+        
+        
         
         <% end %>
   
-
+  </div>
 
     
       
       
 
-      
 
-      <hr>
     </nav>
 
     <%= yield %>

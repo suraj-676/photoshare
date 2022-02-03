@@ -1,12 +1,12 @@
 <%= form_with model: @post, local: true, html: { multipart: true } do |f| %>
-  <%= f.label :comment %>
+  <%= f.label :comment, class: 'form-label' %>
   <br>
-  <%= f.text_field :comment %>
+  <%= f.text_field :comment, class: 'form-control' %>
   <br><br>
   
 <br>
-<%= f.label :image %>
-  <%= f.file_field :image %>
+<%= f.label :image, class: 'form-label' %>
+  <%= f.file_field class: 'form-control' %>
   <br>
   <br>
  <%= f.submit %>

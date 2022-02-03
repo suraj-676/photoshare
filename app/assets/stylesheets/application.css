@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #410909;
+    background-color: white;
 }
 
 h1 {
@@ -59,4 +59,5 @@ img {
 .photo {
     height: 100px;
     float: right;
+    margin-top: 20px;
 }
