@@ -29,7 +29,7 @@ p3 = Post.create!(
   image: "https://assets.unenvironment.org/styles/article_billboard_image/s3/2021-05/alberta-2297204_1920.jpg?h=1483c54f&amp;itok=GdjA9GRu/300/300",
   user_id: u2.id,
   title: "Nature",
-  description: "Nature, in the broadest sense, is the physical world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. ... Within the various uses of the word today, "nature" often refers to geology and wildlife.",
+  description: "Nature, in the broadest sense, is the physical world or universe. Nature can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. ... Within the various uses of the word today, nature often refers to geology and wildlife.",
 
 )
 p4 = Post.create!(
