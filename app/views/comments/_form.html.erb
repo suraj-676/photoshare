@@ -1,1 +1,14 @@
  
+ <%= form_with model: @comment, local: true do |f| %>
+ <div class="comment">
+   <strong>
+       <%= f.label :content %><br>
+       
+  
+  <%= f.text_field :content %>
+  <%= f.hidden_field :post_id, :value => @post.id %>
+
+ <%= f.submit "Submit", :class => "btn btn-primary" %>
+</strong>
+</div>
+<% end %>

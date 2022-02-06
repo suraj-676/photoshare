@@ -16,8 +16,11 @@
   
 
 <% end %>
-<% @post.comments.each do |c| %>
-<%= c.content %>
-<% end %>
 <%= link_to "Delete", post_path(@post), method: "delete" %>
+
+<% @post.comments.each do |c| %>
+  <%= c.content %>
+<% end %>
+
 <%= render partial: "comments/form" %>
+

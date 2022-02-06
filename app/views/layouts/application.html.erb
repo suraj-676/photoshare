@@ -11,58 +11,38 @@
   </head>
 
   <body>
-  <div class="bg-img">
-  <div class="container">
-    <div class="topnav">
-      <%= link_to "Home", root_path %>
-      <%= link_to "Posts", posts_path %>
-    </div>
-  </div>
-</div>
+  <div class="topnav">
+  
+  <input class="input" type="text" placeholder="Search..">
+  
+  <%= link_to "Home", root_path %>
+  <%= link_to "Posts", posts_path %>
+       <%= link_to "Create Posts", new_post_path %>
+       <%= link_to "Login", login_path %>
+       <%= link_to "Logout", login_path, method: "delete" %>
+       <img class="logo" src='https://secure.gravatar.com/avatar/bea6ff7f57ab283aa956f1c41292fc49?size=100/100'">
+       
+       </div>
+       <p class="share">Photoshare</p>
 
-
-
-<div id='foo'>
- <div id='logo'><img src='https://secure.gravatar.com/avatar/bea6ff7f57ab283aa956f1c41292fc49?size=100/100'></div>
- <div id='text'>Photoshare</div>
-</div>
-<nav>
-      
+   <div class="profile_img">
        <% if @current_user.present? %>
+      
        <%= cl_image_tag @current_user.avatar %>
          <%= @current_user.name %>
-        </div>
-         <p class="share"> Share your memories here</p>
-         <div class="login">
-         <%= link_to "Create Posts", new_post_path %>
+        
+    </div>
 
          
-  <div class="log">
-        <%= link_to "Logout", login_path, method: "delete" %>
-         <% else %>
-         <%= link_to "Login", login_path %>
          
-         <%= link_to "Sign Up", "/does-not-exist-yet" %>
-       </div>
-       
-        
-        
-        
-        <% end %>
-  
-  
+ <% end %>
+ <%= yield %>
 
-    
-      
-      
+</body>
 
-
-    </nav>
-
-    <%= yield %>
-  
-
-    
-
-  </body>
 </html>
+   
+
+
+      
+   

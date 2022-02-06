@@ -1,89 +1,84 @@
-        .field_with_errors {
-            border: 2px solid rgb(128, 81, 81);
-        }
-        
-        body {
-            background-color: gray;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        
-        h1 {
-            font-style: Bold;
-            font-family: cursive;
-            color: white;
-            font-size: 40px;
-        }
-        
-        .log {
-            text-align: left;
-            margin-left: 30px;
-        }
-        
-        img {
-            display: inline-flex;
-            height: 100px;
-            margin-top: 10px;
-        }
-        
-        .topnav {
-            background-color: #333;
-            overflow: hidden;
-        }
-        /* Style the links inside the navigation bar */
-        
-        .topnav a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        /* Change the color of links on hover */
-        
-        .topnav a:hover {
-            background-color: #ddd;
-            color: rgb(102, 8, 8);
-        }
-        /* Add a color to the active/current link */
-        
-        .topnav a.active {
-            background-color: #04AA6D;
-            color: white;
-        }
-        
-        #foo {
-            float: right;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: black;
-        }
-        
-        #foo :hover {
-            color: cornsilk;
-        }
-        
-        #text {
-            float: right;
-            margin-right: 10px;
-            font-size: 30px;
-            font-family: 'Quintessential', cursive;
-            ;
-        }
-        
-        .login {
-            font-size: 20px;
-        }
-        
-        .share {
-            margin-left: 37%;
-            font-size: 30px;
-            font-family: 'Quintessential', cursive;
-            outline: blueviolet;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: black;
-        }
-        
-        .share:hover {
-            color: rgb(0, 255, 191)
-        }
+.field_with_errors {
+    border: 2px solid rgb(128, 81, 81);
+}
+
+body {
+    background-color: rgb(151, 63, 63);
+}
+
+.logo {
+    margin-left: 200px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    height: 100px;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Style the "active" element to highlight the current page */
+
+
+/* Style the search box inside the navigation bar */
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+
+.share {
+    float: right;
+    font-size: 40px;
+    color: grey;
+    outline: rgb(174, 161, 187);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    margin-right: 50px;
+}
+
+.share:hover {
+    color: rgb(0, 255, 191)
+}
+
+.input {
+    margin-right: 300px;
+}
+
+.postcreate {
+    color: lightpink;
+    margin-left: 20px;
+}
+
+.profile_img img {
+    height: 120px;
+    margin-top: 20px;
+}

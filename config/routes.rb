@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   root to: "pages#home"
   resources :users
-  resources :posts do
-    resources :comments
-  end
+  post "/posts/:id" => "comments#create"
+  post "/users/:id" => "profile#create"
+  resources :posts
+  resources :comments
+
   get "/login" => "session#new"
   post "/login" => "session#create" #form submitts here
 
