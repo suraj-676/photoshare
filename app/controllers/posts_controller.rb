@@ -34,7 +34,7 @@ class PostsController < ApplicationController
 
   def update
     post = Post.find params[:id]
-    post.update! work_params   # use strong params from create
+    post.update! post_params   # use strong params from create
     redirect_to post_path(params[:id])
   end
 
