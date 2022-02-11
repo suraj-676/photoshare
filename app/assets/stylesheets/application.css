@@ -49,6 +49,11 @@ body {
 
 /* Style the search box inside the navigation bar */
 
+img {
+    max-width: 600px;
+    max-height: 00px;
+}
+
 .topnav input[type=text] {
     float: right;
     padding: 6px;
@@ -80,7 +85,6 @@ body {
 }
 
 .descriptionLabel {
-    display: flex;
     height: 25px;
     width: 200px;
 }
