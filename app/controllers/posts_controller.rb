@@ -38,10 +38,10 @@ class PostsController < ApplicationController
     if params[:post][:image].present?
       response = Cloudinary::Uploader.upload params[:post][:image]
       p response
-      @post.image = response["public_id"]
+      post.image = response["public_id"]
     end
-    @post.user_id = @current_user.id
-    @post.save
+    post.user_id = @current_user.id
+    post.save
     redirect_to post_path(params[:id])
   end
 

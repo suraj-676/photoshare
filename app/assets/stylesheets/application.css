@@ -13,9 +13,9 @@ body {
 }
 
 .logo {
-    margin-left: 200px;
-    height: 80px;
-    margin-top: 10px;
+    margin-left: 160px;
+    height: 70px;
+    margin-top: 15px;
 }
 
 .topnav {
@@ -49,10 +49,7 @@ body {
 
 /* Style the search box inside the navigation bar */
 
-img {
-    max-width: 600px;
-    max-height: 00px;
-}
+
 
 .topnav input[type=text] {
     float: right;
@@ -84,18 +81,17 @@ img {
     margin-right: 300px;
 }
 
-.descriptionLabel {
-    height: 25px;
-    width: 200px;
-}
 
-.title {
-    display: flex;
-    height: 25px;
-    margin-left: 600px;
-}
+
+
+   
 
 .profile_img img {
     height: 160px;
     margin-top: 20px;
+}
+
+img {
+    max-width: 600px;
+    max-height: 600px;
 }
