@@ -20,6 +20,7 @@
 <br><br>
 <%= link_to "Edit", edit_post_path(@post) %>
 <br>
+<br>
 
 
 
@@ -33,7 +34,7 @@
     <br>
     <%= c.user.name %>
     <br>
-<%= link_to "Delete", comment_path(@post), method: "delete" %>
+<%= link_to "Delete", comment_path(c.id), method: "delete" %>
 <br>
 
   </div>
