@@ -2,7 +2,7 @@
 
 print "Creating users..."
 User.destroy_all
-u1 = User.create! email: "suraj@ga.co", name: "suraj", password: "chicken", avatar: "https://www.wallpapersun.com/wp-content/uploads/2021/07/Lock-Screen-Wallpapersuncom-8-715x1193.jpg "
+u1 = User.create! email: "suraj@ga.co", name: "suraj", password: "chicken", avatar: "https://brandyourself.com/blog/wp-content/uploads/linkedin-profile-picture-too-close.png"
 u2 = User.create! email: "dan@ga.co", name: "dan", password: "chicken", avatar: "https://i0.wp.com/ramenswag.com/wp-content/uploads/2020/04/money-heist-lockscreen-wallpapers.jpg?resize=236%2C422&ssl=1"
 u3 = User.create! email: "Steven@ga.co", name: "steven", password: "chicken", avatar: "https://w0.peakpx.com/wallpaper/109/709/HD-wallpaper-anonymous-black-full-games-joker-lock-screen.jpg"
 u4 = User.create! email: "franki@ga.co", name: "franki", password: "chicken", avatar: "https://ichef.bbci.co.uk/news/490/cpsprodpb/C870/production/_112921315_gettyimages-876284806.jpg"
@@ -12,7 +12,7 @@ puts "created #{User.count} users."
 print "Creating posts..."
 Post.destroy_all
 p1 = Post.create!(
-  image: "https://i.ytimg.com/vi/tArC9-RHmU4/maxresdefault.jpg/200/200",
+  image: "https://m.economictimes.com/thumb/msid-69381991,width-1200,height-900,resizemode-4,imgsize-594328/hacker-1.jpg",
   user_id: u1.id,
   title: "cars",
   description: "Thers nothing like the unconditional love of a pet. They show you affection, give you a sense of purpose, and greet you every day when you come home (well, maybe not if you have a cat). There a lot of beautiful sayings and quotes out there about the rare kind of magic pets bring to our lives. Whether you’re about to take the adoption plunge or you just want to wax poetic about puppy love, these quotes will melt your heart in the same way a surprise cuddle from your pet does.",

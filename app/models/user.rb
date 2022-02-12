@@ -3,6 +3,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   has_many :posts
   has_many :comments
+  belongs_to :user, optional: true
   has_many :following_relationships, class_name: "Follow", foreign_key: "follower_id"
   has_many :followed_relationships, class_name: "Follow", foreign_key: "followed_id"
   # if we add through association then we get the user.first following syntax we want and it will be a list of objects

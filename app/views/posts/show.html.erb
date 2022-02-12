@@ -1,5 +1,4 @@
 
-
 <p>
   <strong>title</strong>:
   <%= @post.title %>
@@ -16,11 +15,19 @@
   
 
 <% end %>
+<br>
 <%= link_to "Delete", post_path(@post), method: "delete" %>
 <%= link_to "Edit", edit_post_path(@post) %>
+<br>
 
 <% @post.comments.each do |c| %>
-  <%= c.content %>
+  <div class="comment">
+    <%= c.content %>
+    <br>
+    <%= time_ago_in_words c.created_at %>
+    <br>
+    <%= c.user.name %>
+  </div>
 <% end %>
 
 <%= render partial: "comments/form" %>

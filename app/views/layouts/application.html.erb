@@ -13,37 +13,49 @@
   <body>
   <div class="topnav">
   <% # <input class="input" type="text" placeholder="Search.."> %>
-  <img class="logo" src='https://secure.gravatar.com/avatar/bea6ff7f57ab283aa956f1c41292fc49?size=100/100'">
+  <img class="logo" src='https://secure.gravatar.com/avatar/bea6ff7f57ab283aa956f1c41292fc49?size=100/100'>
+  <div class="profile_img">
+       <% if @current_user.present? %>
+       <%= cl_image_tag @current_user.avatar %>
+         <%= @current_user.name %>    
+ <% end %>
+      
+ </div>
   <div class="home">
   <%= link_to "Home", root_path %>
   <%= link_to "Posts", posts_path %>
        <%= link_to "Create Posts", new_post_path %>
        </div>
+       
        <div class="userlogin">
        
-       <%= link_to "Login", login_path %>
+       
+       <% if @current_user.present? %>
        <%= link_to "Logout", login_path, method: "delete" %>
-       </div>
+<% else %>
+<%= link_to "Login", login_path %>
+        <%= link_to "Signup", new_user_path %>
+
        
-       
+        <% end %>
        </div>
        <p class="share">Photoshare</p>
+       
+       
+       </div>
+       
 
-   <div class="profile_img">
-       <% if @current_user.present? %>
-      
-       <%= cl_image_tag @current_user.avatar %>
-         <%= @current_user.name %>
-        
-    </div>
+   
 
-         
-         
- <% end %>
- <%= yield %>
 
+   <div class="main">      
+     <%= yield %>
+   </div>
+
+<footer>
+<p>Copyright simba productions</p>
+</footer>
 </body>
-
 </html>
    
 

@@ -1,14 +1,19 @@
-<div class=“createpost”>
+<div class=“form-group  ”>
+
+
 
   <%= form_with model: @post, local: true, html: { multipart: true } do |f| %>
-    
+    <div class="title">
     
       <%= f.label :title, class: "form-label" %>
+      
       <br>
+      
       <%= f.text_field :title, class: "form-control" %>
+     
       <br><br>
    
-
+    </div>
    
       <%= f.label :description, class: "form-label" %>
       <br>
@@ -18,11 +23,11 @@
     
     <%= f.label :image, class: "form-label" %>
       <%= f.file_field :image, class: "form-control" %>
-      </div>
+    
       <br>
       <br>
 
-
+</div>
     <%= f.submit %>
 
   <% end %>
