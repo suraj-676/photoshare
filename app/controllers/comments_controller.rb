@@ -40,7 +40,7 @@ class CommentsController < ApplicationController
     comment.destroy
 
     #redirect to post
-    redirect_to comments_path
+    redirect_to posts_path
   end
 
   private
