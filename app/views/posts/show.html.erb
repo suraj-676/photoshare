@@ -15,10 +15,15 @@
   
 
 <% end %>
-<br>
+<div class="">
 <%= link_to "Delete", post_path(@post), method: "delete" %>
+<br><br>
 <%= link_to "Edit", edit_post_path(@post) %>
 <br>
+
+
+
+
 
 <% @post.comments.each do |c| %>
   <div class="comment">
@@ -27,6 +32,10 @@
     <%= time_ago_in_words c.created_at %>
     <br>
     <%= c.user.name %>
+    <br>
+<%= link_to "Delete", comment_path(@post), method: "delete" %>
+<br>
+
   </div>
 <% end %>
 

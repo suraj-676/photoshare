@@ -1,12 +1,15 @@
 <%= form_with model: @user, local: true, html: { multipart: true } do |f| %>
+<br>
   <%= f.label :email %>
   <br>
   <%= f.text_field :email %>
   <br>
+  <br>
   <%= f.label :password %>
   <br>
   <%= f.text_field :password %>
-  <br><br>
+  <br>
+  <br>
 
 <%= f.label :avatar %>
   <%= f.file_field :avatar %>
