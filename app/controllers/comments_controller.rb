@@ -33,8 +33,14 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    Comment.destroy params[:id]
-    redirect_to comment_path
+    # Perform the lookup
+    comment = Comment.find(params[:id])
+
+    # Destroy/delete the record
+    comment.destroy
+
+    #redirect to post
+    redirect_to comments_path
   end
 
   private
