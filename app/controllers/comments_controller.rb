@@ -23,7 +23,8 @@ class CommentsController < ApplicationController
   end
 
   def edit
-    @comment = Comment.find params[:id]
+    comments = Comment.find params[:id]
+    redirect_to comment_path
   end
 
   def update
