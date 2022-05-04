@@ -8,4 +8,4 @@ It demonstrates everything we'd learnt so far about Ruby on Rails.
 2.🎯 Project Brief
 The brief was simply to create any kind of web application that demonstrated our understanding of CRUD databases.
 
-3.you can check live version here: https://github.com/suraj-676/photoshare
+3.you can check live version here: https://vast-brook-36911.herokuapp.com/
